@@ -1,0 +1,22 @@
+insert into Corta(fecha,cortador,galones, observacion) values ('2021-03-07','Kevin Narvaes',16,'Corta con Pezon y Hoja');
+
+CREATE USER 'narvaes_bi'@'localhost' IDENTIFIED BY 'ALucinante123';
+GRANT ALL PRIVILEGES ON *.* TO 'narvaes_bi'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+ mysql -u narvaes_bi -p
+
+git config --global user.name "kevinnarvaes"
+git config --global user.email "kevin.nrv2.0@gmail.com"
+
+git clone https://github.com/kevinnarvaes/Proyecto_IDAW_S9.git
+
+
+sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.6.3-linux1/GitHubDesktop-linux-2.6.3-linux1.deb
+sudo apt-get install gdebi-core
+sudo gdebi GitHubDesktop-linux-2.6.3-linux1.deb
+
+Proyecto_IDAW_S9/
+
+
+
