@@ -1,0 +1,110 @@
+body{
+    background-color: pink;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-left:10px;
+  }
+  
+h1{
+    color: white;
+    background-color: #8E4D43;
+    
+}
+
+label{
+  color: #8E4D43;
+  padding: 4px;
+}
+
+table{
+  border: 1px solid black;
+  font: 16px "Segoe UI", Helvetica, Arial, sans-serif;
+  border-spacing: 5;
+  width: 65%;
+
+}
+tr:hover {
+  background-color:#f5f5f5;
+}
+
+th {
+  background-color: #8E4D43;
+  color: white;
+}
+
+p.parrafotitulo {
+  border-style: double;
+  border-bottom-color:saddlebrown;
+  border-left: 5in;
+  border-right: 5in;
+  font-size: larger;
+}
+
+h2{
+  background-color: burlywood;
+  font-size: x-large;
+}
+
+.boton{
+  background-color:#8E4D43;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  margin-left:10px;
+}
+
+.boton:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div{
+  line-height: 1.5;
+}
+
+form{
+  align-items: stretch;
+
+}
+
+span{
+  margin-left:5px;
+
+}
+
+input{
+  margin-left:5px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8E4D43;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color:chocolate;
+}

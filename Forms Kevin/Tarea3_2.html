@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personal - 2021</title>
+    <link rel = "stylesheet" href="estilos.css">
+</head>
+
+<header>
+    <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Noticias">Noticias</a></li>
+        <li><a href="#Acerca De">Acerca De</a></li>
+        <li><a href="#Despulpado">Despulpado</a></li>
+        <li><a href="#Personal">Personal</a></li>
+        <li></li>
+      </ul>
+    <div id="encab">
+        <img src="https://drive.google.com/uc?export=view&id=1TesebcEqzs6LG3el8lp5YgFH1aWUu8oC"
+        style="width: 100px; max-width: 100%; height: auto" align=”left” >
+        <h1>Registro - Datos de Personal</h1>
+    </div>
+</header>
+<body background="https://drive.google.com/uc?export=view&id=1tXWBVjAAxR5Tb8RW6yCOXT-rqHjmDuDU" style="background-color:antiquewhite">
+    
+    <div id="Form_RegDatosPers">
+        
+        <form>
+            <h2>Formulario de Registro</h2>
+            <p>A continuacion, complete los campos solicitados de acuerdo a su informacion actual.</p>
+            <label for="id"> 
+                <span>Fecha: </span><br>
+                <input id="id" name="id" type=text placeholder="0000-0000-00000"></input>
+            </label>
+            <br>
+            <label for="nom_pers"> 
+                <span>Nombre: </span><br>
+                <input id="nom_pers" name="nom_pers" type=text placeholder="Ingrese Nombre y Apellido"></input>
+            </label>
+
+            <br>
+            <label for="genero"> 
+                <span>Genero: </span><br>
+                <input type="radio" id="masc" name="genero" value="masc">
+                <label for="masc">M</label><br>
+                <input type="radio" id="fem" name="genero" value="fem">
+                <label for="masc">F</label>
+            </label>
+
+            <br>
+            <label for="edad"> 
+                <span>Edad: </span><br>
+                <input id="edad" name="edad" type=number></input>
+            </label>
+
+            <br>
+            <label for="celular"> 
+                <span>Celular: </span><br>
+                <input id="celular" name="celular" type=text placeholder="00000000"></input>
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Cancelar"> 
+            </label>
+
+        </form>
+    </div>
+    <br>
+
+    <div id=tbl_datospersonal>
+        <h2>Listado de personal Registrado</h2>
+        <p>Se enlistan todos los ingresados del personal en la siguiente matriz.</p>
+        
+        <table border="1">
+            <tr height = 50>
+                <th align="center" width=200 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">ID</th>
+                <th align="center" width=250 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Nombre</th>
+                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Genero</th>
+                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Edad</th>
+                <th align="center" width=100 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Celular</th>
+            </tr>
+            <tr height = 30>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+            </tr>
+            <tr height = 30>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+            </tr>
+            <tr height = 30>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+            </tr>
+        </table>
+
+
+    </div>
+</body>
+<br>
+<br>
+<footer>
+    <div id="pie_de_pagina">
+        <p>Cualquier consulta en cuanto registro de informacion, hacer solicitud via correo a
+            <br>
+            <a href="mailto:kevin.narvaes@unitec.edu">kevin.narvaes@unitec.edu</a>
+        </p>
+    </div>
+</footer>
+
+</html>
