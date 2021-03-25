@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso del Empacado del Café - 2021</title>
+    <link rel = "stylesheet" href="estilos.css">
+</head>
+
+<header>
+    <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Noticias">Noticias</a></li>
+        <li><a href="#Acerca De">Acerca De</a></li>
+        <li><a href="#Despulpado">Despulpado</a></li>
+        <li><a href="#Personal">Personal</a></li>
+        <li></li>
+      </ul>
+    <div id="encab">
+        <img src="https://drive.google.com/uc?export=view&id=1TesebcEqzs6LG3el8lp5YgFH1aWUu8oC"
+        style="width: 100px; max-width: 100%; height: auto" align=”left” >
+        <h1>Registro del Empacado del Cafe</h1>
+    </div>
+</header>
+<body background="https://drive.google.com/uc?export=view&id=1tXWBVjAAxR5Tb8RW6yCOXT-rqHjmDuDU" style="background-color:antiquewhite;">
+   
+    <div id="Form_ProcEmpCafe">
+        <form>
+            <h2>Formulario de Empaque</h2>
+            <p class="parrafotitulo">A continuacion, complete los campos solicitados de acuerdo a los resultados obtenido en proceso</p>
+            <label for="Nombre del Empacador"> 
+                <span>Nombre del Empacador: </span><br>
+                <input id="Empacador" name="Empacador" type=text placeholder="Ej: Luis Padilla"></input>
+            </label>
+
+            <br>
+            <label for="Cantidad de Empaques de 200g"> 
+                <span>Cantidad de Empaques de 200g: </span><br>
+                <input id="200g" name="200g" type=text placeholder="Ej: 50"></input>
+            </label>
+
+            <br>
+            <label for="Cantidad de Empaques de 500g"> 
+                <span>Cantidad de Empaques de 500g: </span><br>
+                <input id="500g" name="500g" type=text placeholder="Ej: 50"></input>
+            </label>
+
+            <br>
+            <label for="Total de Empaques al dia"> 
+                <span>Total de Empaques al dia: </span><br>
+                <input id="Total" name="Total" type=time></input>
+            </label>
+
+            <br>
+            <br>
+            <br>
+            <label>
+                <input class= "boton" type="submit" value="Registrar">
+                <input class= "boton" type="reset" value="Cancelar"> 
+            </label>
+
+        </form>
+    </div>
+
+    <div id=tbl_regescapulado>
+        <h2>Listado de personal Registrado</h2>
+        <p class="parrafotitulo">Se enlistan todos los registros para el proceso de Empacado</p>
+        
+        <table border="1">
+            <tr height = 50>
+                <th align="center" width=200 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Nombre del Empacador</th>
+                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Empaques 200g</th>
+                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Empaques 500g</th>
+                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Total Empaques al dia</th>               
+            </tr>
+            <tr height = 30>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+            </tr>
+            <tr height = 30>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+            </tr>
+            <tr height = 30>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+                <td align="center" style="border: 1pt solid gray"></td>
+            </tr>
+        </table>
+
+
+    </div>
+</body>
+<br>
+<br>
+<footer>
+    <div id="pie_de_pagina">
+        <p>Cualquier consulta en cuanto registro de informacion, hacer solicitud via correo a
+            <br>
+            <a href="mailto:kevin.narvaes@unitec.edu">kevin.narvaes@unitec.edu</a>
+        </p>
+    </div>
+</footer>
+</html>
