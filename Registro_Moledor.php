@@ -7,6 +7,40 @@
     <link rel = "stylesheet" href="estilos.css">
 </head>
 
+<?php
+      $Servidor = "localhost";
+      $Usuario = "manuel";
+      $Clave = "IDAW";
+      $BD = "Cafe";
+
+      $Conexion = mysqli_connect($Servidor, $Usuario, $Clave, $BD);
+      if($Conexion == true){
+        echo "<h2><b>Conexion Exitosa!!!</b></h2>";
+
+        $Fecha = $_POST['fech'];
+        $Cortador = $_POST['cort'];
+        $Galones = $_POST['gal'];
+        $Observacion = $_POST['obs'];
+        
+        if( !empty($Fecha) && !empty($Cortador) && !empty($Galones) && !empty($Observacion)  ){
+          $Consulta = "insert into Corta(Fecha,Cortador,Galones,Observacion)values('$Fecha','$Cortador',$Galones,'$Observacion');";
+        
+          if( $Conexion->query($Consulta) ){
+            echo "<h2>Insercion Exitosa!!!</h2>";
+          }else{
+            echo "<h2>No fue posible realizar la insercion de datos en la Tabla Corta, <br>Favor Verifique los datos a ingresar</h2>";
+          }
+
+        }else {
+          echo "<h2>Algunos Campos se encuentran vacios, favor llenar toda la Informacion Requerida!!!</h2>";
+        }
+
+        }else{
+          die("<h2>NO fue posible establecer conexion con el Servidor o Base de Datos!!!</h2>");
+        }
+        $Conexion->close();
+    ?>
+
 <header>
     <ul>
         <li><a href="#Inicio">Inicio</a></li>
