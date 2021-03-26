@@ -1,0 +1,11 @@
+CREATE TABLE Mole(fecha date DEFAULT NULL,
+ hora time,
+ nombre_mole varchar(150),
+ turno_mole varchar(150),
+ cant_horas FLOAT)
+
+
+------------------------------------------------
+
+
+
