@@ -10,11 +10,14 @@
 <!--Un comment-->
 <header>
     <ul>
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Noticias">Noticias</a></li>
-        <li><a href="#Acerca De">Acerca De</a></li>
-        <li><a href="#Despulpado">Despulpado</a></li>
-        <li><a href="#Personal">Personal</a></li>
+    <li><a href="/Proyecto/frm_inicio.php">Inicio</a></li>
+        <li><a href="/Proyecto/frm_corta.php">Corta</a></li>
+        <li><a href="/Proyecto/frm_despulpa.php">Despulpa</a></li>
+        <li><a href="/Proyecto/frm_Lava.php">Lava</a></li>
+        <li><a href="/Proyecto/frm_seca.php">Seca</a></li>
+        <li><a href="/Proyecto/frm_tosta.php">Tosta</a></li>
+        <li><a href="/Proyecto/frm_moledor.php">Moler</a></li>
+        <li><a href="/Proyecto/frm_empaca.php">Empacar</a></li>
         <li></li>
       </ul>
     <div id="encab">
@@ -138,8 +141,12 @@
 <footer>
     <div id="pie_de_pagina">
         <p>Cualquier consulta en cuanto registro de informacion, hacer solicitud via correo a
-            <br>
+        <br>
             <a href="mailto:kevin.narvaes@unitec.edu">kevin.narvaes@unitec.edu</a>
+            <br>
+            <a href="mailto:mabonilla@unitec.edu">mabonilla@unitec.edu</a>
+            <br>
+            <a href="mailto:luis.david@unitec.edu">luis.david@unitec.edu</a>
         </p>
     </div>
 </footer>
