@@ -76,8 +76,8 @@
             </tr>
             <?php 
             $Servidor ="localhost";
-            $Usuario = "phpmyadmin";
-            $Clave = "luis";
+            $Usuario = "optimus";
+            $Clave = "123";
             $BD = "Cafe";
             $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
       
@@ -109,7 +109,7 @@
       ?> 
         </table>
         <br><br>
-<a href="./ExcelTosta.php" class="btn-small blue z-depth-2">Descargar Excel</a>
+<a href="./Excel/ExcelTosta.php" class="btn-small blue z-depth-2">Exportar a Excel</a>
 
     </div>
 </body>
