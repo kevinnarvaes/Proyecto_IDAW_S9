@@ -116,6 +116,7 @@
 ?> 
 </table>
 
+<a href="./Excel/ExcelCorta.php" class="btn-small blue z-depth-2">Exportar a Excel</a>
 
 
     </div>
