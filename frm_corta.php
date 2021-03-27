@@ -11,7 +11,7 @@
 <header>
     <ul>
         <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Noticias">Noticias</a></li>
+        <li><a href="/Proyecto/frm_despulpa.php">Despulpa</a></li>
         <li><a href="#Acerca De">Acerca De</a></li>
         <li><a href="#Despulpado">Despulpado</a></li>
         <li><a href="#Personal">Personal</a></li>
