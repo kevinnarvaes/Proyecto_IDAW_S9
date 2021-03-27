@@ -12,3 +12,15 @@ hora time,
 nombre_tosta varchar (150),
 cant_tosta FLOAT)
 
+
+
+-------------------------------------------------
+
+CREATE TABLE usuarios (
+    id int PRIMARY KEY,
+    usuario varchar(50) not null unique,
+    contraseña varchar(50) not null);
+    
+INSERT INTO usuarios (id,usuario,contraseña) values
+(1,'optimus','123')
+

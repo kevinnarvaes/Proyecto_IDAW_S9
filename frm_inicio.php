@@ -25,6 +25,16 @@
         style="width: 100px; max-width: 100%; height: auto" align=”left” >
         <h1>Bienvenidos al Proyecto Proceso del Cafe</h1>
     </div>
+
+    <table border="1">
+            <tr height = 80>
+        <th align="center" width=50 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Mucho antes de disfrutar del aromático sabor de un buen café, 
+        se produceun interesante proceso de 7 etapas forjado y perfeccionado generación tras generación.
+        Veamos más de cerca cuáles son las etapas de este proceso y cómo se desarrolla:</th>
+</tr>
+</table>
+
+
 </header>
 <body background="https://drive.google.com/uc?export=view&id=1tXWBVjAAxR5Tb8RW6yCOXT-rqHjmDuDU" style="background-color:antiquewhite;">
 

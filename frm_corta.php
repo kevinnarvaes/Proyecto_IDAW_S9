@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proceso Tostado de Café - 2021</title>
+    <title>Proceso de Cortado de Café - 2021</title>
     <link rel = "stylesheet" href="estilos.css">
 </head>
 
@@ -23,7 +23,7 @@
     <div id="encab">
         <img src="https://drive.google.com/uc?export=view&id=1TesebcEqzs6LG3el8lp5YgFH1aWUu8oC"
         style="width: 100px; max-width: 100%; height: auto" align=”left” >
-        <h1>Registro - COrta de Cafe</h1>
+        <h1>Registro - Corta de Cafe</h1>
     </div>
 </header>
 <body background="https://drive.google.com/uc?export=view&id=1tXWBVjAAxR5Tb8RW6yCOXT-rqHjmDuDU" style="background-color:antiquewhite;">
