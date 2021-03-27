@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proceso Tostado de Café - 2021</title>
+    <title>Proceso Moledor de Café - 2021</title>
     <link rel = "stylesheet" href="estilos.css">
 </head>
 
