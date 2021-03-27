@@ -93,7 +93,6 @@
       $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
 
       if($Conexion == true){
-        echo "<h2>Conexion Exitosa a la Base de Datos Cafe!!!</h2>";
 
        $Consulta = "select * from Lava;";
         $Resultado = $Conexion->query($Consulta);
@@ -121,7 +120,7 @@
     ?> 
         </table>
 
-        <a href="./Excel/ExcelLava.php" class="btn-small blue z-depth-2">Exportar Excel</a>
+
     </div>
 </body>
 <br>

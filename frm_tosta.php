@@ -52,7 +52,8 @@
                 <span>Cantidad Cafe tostado: </span><br>
                 <input id="cant_tosta" name="cant_tosta" type=number max="100" min="0" placeholder="0 - 100"></input>
             </label>
-            
+            <br>
+            <br>
             <label>
                 <input class= "boton" type="submit" value="Registrar">
                 <input class= "boton" type="reset" value="Cancelar"> 
@@ -82,7 +83,6 @@
             $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
       
             if($Conexion == true){
-              echo "<h2><b>Conexion Exitosa</b></h2>";
       
               $Consulta = "select * from Tosta;";
               $Resultado = $Conexion->query($Consulta);

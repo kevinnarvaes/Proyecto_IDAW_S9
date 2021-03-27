@@ -87,7 +87,7 @@
             $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
       
             if($Conexion == true){
-              echo "<h2>Conexion Exitosa a la Base de Datos Cafe!!!</h2>";
+
       
              $Consulta = "select * from Empaca;";
               $Resultado = $Conexion->query($Consulta);
