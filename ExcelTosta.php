@@ -14,8 +14,8 @@ header("Content-Disposition: attachment; filename= archivo.xlsx");
             </tr>
             <?php 
             $Servidor ="localhost";
-            $Usuario = "phpmyadmin";
-            $Clave = "luis";
+            $Usuario = "optimus";
+            $Clave = "123";
             $BD = "Cafe";
             $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
       
