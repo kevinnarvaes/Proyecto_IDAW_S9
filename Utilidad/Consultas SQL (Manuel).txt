@@ -1,0 +1,14 @@
+CREATE TABLE Seca(Secador text DEFAULT NULL,
+ Fecha date,
+ Inicio time,
+ Fin time,
+ Tipo varchar(150))
+
+
+------------------------------------------------
+
+
+CREATE TABLE Empaca(Empacador text DEFAULT NULL,
+ dos text,
+ cinco text,
+ Calidad varchar(100)) 

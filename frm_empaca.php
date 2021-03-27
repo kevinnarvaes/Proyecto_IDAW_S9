@@ -25,9 +25,10 @@
 <body background="https://drive.google.com/uc?export=view&id=1tXWBVjAAxR5Tb8RW6yCOXT-rqHjmDuDU" style="background-color:antiquewhite;">
    
     <div id="Form_ProcEmpCafe">
-        <form>
+        <form name="frm_empaca" class="frm_empaca" method="post" action="InsertaEmpaca.php">
             <h2>Formulario de Empaque</h2>
             <p class="parrafotitulo">A continuacion, complete los campos solicitados de acuerdo a los resultados obtenido en proceso</p>
+            
             <label for="Nombre del Empacador"> 
                 <span>Nombre del Empacador: </span><br>
                 <input id="Empacador" name="Empacador" type=text placeholder="Ej: Luis Padilla"></input>
@@ -36,19 +37,19 @@
             <br>
             <label for="Cantidad de Empaques de 200g"> 
                 <span>Cantidad de Empaques de 200g: </span><br>
-                <input id="200g" name="200g" type=text placeholder="Ej: 50"></input>
+                <input id="dos" name="dos" type=text placeholder="Ej: 50"></input>
             </label>
 
             <br>
             <label for="Cantidad de Empaques de 500g"> 
                 <span>Cantidad de Empaques de 500g: </span><br>
-                <input id="500g" name="500g" type=text placeholder="Ej: 50"></input>
+                <input id="cinco" name="cinco" type=text placeholder="Ej: 50"></input>
             </label>
 
             <br>
-            <label for="Total de Empaques al dia"> 
-                <span>Total de Empaques al dia: </span><br>
-                <input id="Total" name="Total" type=time></input>
+            <label for="Calidad del Cafe"> 
+                <span>Calidad del Cafe: </span><br>
+                <input id="Calidad" name="Calidad" type=text></input>
             </label>
 
             <br>
@@ -71,26 +72,43 @@
                 <th align="center" width=200 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Nombre del Empacador</th>
                 <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Empaques 200g</th>
                 <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Empaques 500g</th>
-                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Total Empaques al dia</th>               
+                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Calidad del Cafe</th>               
             </tr>
-            <tr height = 30>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-            </tr>
-            <tr height = 30>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-            </tr>
-            <tr height = 30>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-            </tr>
+            
+            <?php
+            $Servidor ="localhost";
+            $Usuario = "optimus";
+            $Clave = "123";
+            $BD = "Cafe";
+            
+            $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
+      
+            if($Conexion == true){
+              echo "<h2>Conexion Exitosa a la Base de Datos Cafe!!!</h2>";
+      
+             $Consulta = "select * from Empaca;";
+              $Resultado = $Conexion->query($Consulta);
+      
+              while($fila = $Resultado->fetch_assoc()){
+                $Empacador = $fila['Empacador'];
+                $dos = $fila['dos'];
+                $cinco = $fila['cinco'];
+                $Calidad = $fila['Calidad'];
+                
+                echo "<tr>";
+              echo "<td width=\"200\" height=\"15\" style=\"border:2pt solid #C99F81\">".$Empacador."</td>";
+              echo "<td width=\"50\" height=\"15\" style=\"border:2pt solid #C99F81\">".$dos."</td>";
+              echo "<td width=\"50\" height=\"15\" style=\"border:2pt solid #C99F81\">".$cinco."</td>";
+              echo "<td width=\"100\" height=\"15\" style=\"border:2pt solid #C99F81\">".$Calidad."</td>";
+              echo "</tr>";         
+              }  
+      
+              $Conexion->close();
+            }else{
+              die("<h2>NO fue posible establecer Conexion con la Base de Datos Cafe</h2>");
+            }
+          ?> 
+          
         </table>
 
 
