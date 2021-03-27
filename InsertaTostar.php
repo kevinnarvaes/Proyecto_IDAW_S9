@@ -11,14 +11,12 @@
 
         $Fecha = $_POST['fecha'];
         $Hora = $_POST['hora'];
-        $Mole = $_POST['nombre_mole'];
-        $Turno = $_POST['turno_mole'];
-        $Cant_Horas=$_POST['cant_horas'];
-        $Cant_Cafe=$_POST['cant_cafe'];
+        $Tostador = $_POST['nombre_tosta'];
+        $Cant_Tosta = $_POST['cant_tosta'];
 
-        if(!empty($Fecha) && !empty($Hora) && !empty($Mole) && !empty($Turno)&& !empty($Cant_Horas)&& !empty($Cant_Cafe)){
-          $Consulta ="insert into Mole(fecha,hora,nombre_mole,turno_mole,cant_horas,cant_cafe) values (
-            '$Fecha','$Hora','$Mole','$Turno','$Cant_Horas','$Cant_Cafe');";
+        if(!empty($Fecha) && !empty($Hora) && !empty($Tostador) && !empty($Cant_Tosta)){
+          $Consulta ="insert into Tosta(fecha,hora,nombre_tosta,cant_tosta) values (
+            '$Fecha','$Hora','$Tostador','$Cant_Tosta');";
 
             if ($Conexion->query($Consulta)){
               echo "<h2>Datos insertados con exito</h2>";

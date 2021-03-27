@@ -25,7 +25,7 @@
 <body background="https://drive.google.com/uc?export=view&id=1tXWBVjAAxR5Tb8RW6yCOXT-rqHjmDuDU" style="background-color:antiquewhite;">
    
     <div id="Form_ProcDespCafe">
-        <form>
+    <form name="frm_tostador" class="frm_tostador" method="post" action="InsertaTostar.php">
             <h2>Formulario de Registro de Tostador</h2>
             <p class="parrafotitulo">A continuacion, complete los campos solicitados de acuerdo a los resultados obtenido en proceso</p>
             <label for="fecha"> 
@@ -71,6 +71,39 @@
                 
                 
             </tr>
+            <?php 
+            $Servidor ="localhost";
+            $Usuario = "phpmyadmin";
+            $Clave = "luis";
+            $BD = "Cafe";
+            $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
+      
+            if($Conexion == true){
+              echo "<h2><b>Conexion Exitosa</b></h2>";
+      
+              $Consulta = "select * from Tosta;";
+              $Resultado = $Conexion->query($Consulta);
+      
+              while($fila = $Resultado->fetch_assoc()){
+              $Fecha = $fila['fecha'];
+              $Hora = $fila['hora'];
+              $Tostador = $fila['nombre_tosta'];             
+              $Cant_Tosta=$fila['cant_tosta'];                   
+         
+              echo "<tr>";
+              echo "<td width=\"200\" height=\"15\" style=\"border:2pt solid #30A163\">".$Fecha."</td>";
+              echo "<td width=\"50\" height=\"15\" style=\"border:2pt solid #30A163\">".$Hora."</td>";
+              echo "<td width=\"50\" height=\"15\" style=\"border:2pt solid #30A163\">".$Tostador."</td>";            
+              echo "<td width=\"50\" height=\"15\" style=\"border:2pt solid #30A163\">".$Cant_Tosta."</td>";
+              echo "</tr>";         
+        }   
+          
+      
+        $Conexion->close();
+      }else{
+        die("<h2>NO fue posible establecer Conexion con la Base de Datos Cafe</h2>");
+      }
+      ?> 
         </table>
 
 
