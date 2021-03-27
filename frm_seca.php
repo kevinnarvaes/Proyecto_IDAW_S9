@@ -119,7 +119,7 @@
       }
     ?> 
         </table>
-        <a href="./ExcelSeca.php" class="btn-small blue z-depth-2">Exportar Excel</a>
+        <a href="./Excel/ExcelSeca.php" class="btn-small blue z-depth-2">Exportar Excel</a>
 
     </div>
 </body>
