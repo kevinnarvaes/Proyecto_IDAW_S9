@@ -115,7 +115,8 @@
             ?> 
             </table>
 
-
+            <br><br>
+    <a href="./Excel/ExcelDespulpa.php" class="btn-small blue z-depth-2">Exportar a Excel</a>
     </div>
 </body>
 <br>
