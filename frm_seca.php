@@ -86,8 +86,8 @@
           
             <?php
       $Servidor ="localhost";
-      $Usuario = "manuel";
-      $Clave = "IDAW";
+      $Usuario = "optimus";
+      $Clave = "123";
       $BD = "Cafe";
       $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
 
@@ -119,7 +119,7 @@
       }
     ?> 
         </table>
-
+        <a href="./Excel/ExcelSeca.php" class="btn-small blue z-depth-2">Exportar Excel</a>
 
     </div>
 </body>
