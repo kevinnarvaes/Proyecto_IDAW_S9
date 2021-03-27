@@ -34,6 +34,7 @@
                 <input id="fecha" name="fecha" type=date></input>
             </label>
             <br>
+            
             <label for="hora"> 
                 <span>Horas trabajadas por el moledor: </span><br>
                 <input id="hora" name="hora" type=time></input>
@@ -92,13 +93,12 @@
         
         <?php 
       $Servidor ="localhost";
-      $Usuario = "phpmyadmin";
-      $Clave = "luis";
+      $Usuario = "optimus";
+      $Clave = "123";
       $BD = "Cafe";
       $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
 
       if($Conexion == true){
-        echo "<h2><b>Conexion Exitosa</b></h2>";
 
         $Consulta = "select * from Mole;";
         $Resultado = $Conexion->query($Consulta);

@@ -25,7 +25,7 @@
 <body background="https://drive.google.com/uc?export=view&id=1tXWBVjAAxR5Tb8RW6yCOXT-rqHjmDuDU" style="background-color:antiquewhite;">
    
     <div id="Form_ProcDespCafe">
-        <form>
+        <form name="frm_despulpa" class="frm_despulpa" method="post" action="InsertaDespulpa.php">
             <h2>Formulario de Registro</h2>
             <p class="parrafotitulo">A continuacion, complete los campos solicitados de acuerdo a los resultados obtenido en proceso</p>
             <label for="fecha"> 
@@ -51,11 +51,8 @@
             </label>
             <br>
             <label for ="nom_requin">
-                <span>Ingrese los requintadores asociados a registro indicado: </span><br>
-                <label for="nom_requin1"> <input id="nom_requin1" name="nom_requin1" type=text placeholder="Ej: Kevin Narvaes"></input> </label><br>
-                <label for="nom_requin2"> <input id="nom_requin2" name="nom_requin2" type=text placeholder="Ej: Kevin Narvaes"></input> </label><br>
-                <label for="nom_requin3"> <input id="nom_requin3" name="nom_requin3" type=text placeholder="Ej: Kevin Narvaes"></input> </label><br>
-                <label for="nom_requin4"> <input id="nom_requin4" name="nom_requin4" type=text placeholder="Ej: Kevin Narvaes"></input> </label>
+                <span>Ingrese los requintador asociado: </span><br>
+                <input id="nom_requin" name="nom_requin" type=text placeholder="Ej: Kevin Narvaes"></input>
             </label>
             <br>
             <br>
@@ -73,38 +70,47 @@
         
         <table border="1">
             <tr height = 50>
-                <th align="center" width=100 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Mes</th>
-                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Semana</th>
-                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Día</th>
+                <th align="center" width=100 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Fecha</th>
+                <th align="center" width=70 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Hora</th>
                 <th align="center" width=250 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Despulpador</th>
                 <th align="center" width=150 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Total Chorros</th>
-                <th align="center" width=250 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Total Requintadores</th>
+                <th align="center" width=250 style="border: 1pt solid whitesmoke" bgcolor= "#C99F81">Requintadores</th>
             </tr>
-            <tr height = 30>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-            </tr>
-            <tr height = 30>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-            </tr>
-            <tr height = 30>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-                <td align="center" style="border: 1pt solid gray"></td>
-            </tr>
-        </table>
+            <?php 
+                $Servidor ="localhost";
+                $Usuario = "optimus";
+                $Clave = "123";
+                $BD = "Cafe";
+                $Conexion = mysqli_connect($Servidor,$Usuario,$Clave,$BD);
+
+                if($Conexion == true){
+
+                    $Consulta = "select * from Despulpa;";
+                    $Resultado = $Conexion->query($Consulta);
+
+                    while($fila = $Resultado->fetch_assoc()){
+                    $Fecha = $fila['Fecha'];
+                    $Hora = $fila['Hora'];
+                    $Despulpador = $fila['Despulpador'];
+                    $Chorros = $fila['Cantidad'];
+                    $Requintador=$fila['Requintador'];    
+            
+                    echo "<tr>";
+                    echo "<td width=\"200\" height=\"15\">".$Fecha."</td>";
+                    echo "<td width=\"50\" height=\"15\">".$Hora."</td>";
+                    echo "<td width=\"50\" height=\"15\">".$Despulpador."</td>";
+                    echo "<td width=\"50\" height=\"15\">".$Chorros."</td>";
+                    echo "<td width=\"50\" height=\"15\">".$Requintador."</td>";
+                    echo "</tr>";         
+            }   
+                
+
+            $Conexion->close();
+            }else{
+            die("<h2>NO fue posible establecer Conexion con la Base de Datos Cafe</h2>");
+            }
+            ?> 
+            </table>
 
 
     </div>
