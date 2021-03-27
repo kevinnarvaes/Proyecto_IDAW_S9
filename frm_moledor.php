@@ -61,13 +61,13 @@
                 <input id="cant_horas" name="cant_horas" type=number max="100" min="0" placeholder="0 - 100"></input>
             </label>
             
-
-
             <br>
             <label for="cant_molido"> 
                 <span>Cantidad Cafe molido: </span><br>
                 <input id="cant_molido" name="cant_molido" type=number max="100" min="0" placeholder="0 - 100"></input>
             </label>
+            <br>
+            <br>
             
             <label>
                 <input class= "boton" type="submit" value="Registrar">
@@ -112,7 +112,7 @@
         $Mole = $fila['nombre_mole'];
         $Turno = $fila['turno_mole'];
         $Cant_Horas=$fila['cant_horas'];
-        $Cant_Cafe=$fila['cant_cafe'];       
+        $Cant_Cafe=$fila['cant_molido'];       
    
         echo "<tr>";
         echo "<td width=\"200\" height=\"15\" style=\"border:2pt solid #30A163\">".$Fecha."</td>";
