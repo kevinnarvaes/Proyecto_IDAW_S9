@@ -108,7 +108,8 @@
       }
       ?> 
         </table>
-
+        <br><br>
+<a href="./ExcelTosta.php" class="btn-small blue z-depth-2">Descargar Excel</a>
 
     </div>
 </body>

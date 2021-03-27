@@ -132,8 +132,8 @@
 ?> 
 </table>
 
-
-
+<br><br>
+<a href="./ExcelMole.php" class="btn-small blue z-depth-2">Descargar Excel</a>
     </div>
 </body>
 <br>
