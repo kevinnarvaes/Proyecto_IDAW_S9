@@ -27,7 +27,7 @@
 
         <h2>
 Mucho antes de disfrutar del aromático sabor de un buen café, se produce 
-un interesante proceso de 8 etapas forjado y perfeccionado generación tras generación. 
+un interesante proceso de 7 etapas forjado y perfeccionado generación tras generación. 
 Veamos más de cerca cuáles son las etapas de este proceso y cómo se desarrolla:
  </h2>
     </div>
